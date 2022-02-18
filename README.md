@@ -121,3 +121,26 @@ timerId를 반환함<br>
 #### clearInterval( intervalId )
 setInterval 함수 호출의 결과로 반환된 intervalId를 인자로 받아 주기적으로 호출되던 function 호출을 취소<br>
 
+
+## JSON
+### JSON : Javascript Object Notification
+자바스크립트의 객체를 문자열로 표현하는 방법
+프로그램간에 전달하기 편리 (서버 -> 브라우저)<br>
+### JSON API
+#### JSON.stringify( object )
+인자로 받은 객체를 JSON 문자열로 반환함<br>
+#### JSON.parse( sring )
+인자로 받은 문자열을 Javascript Object로 변경해 반환함<br>
+var original_obj = { pi:3.14, str:"string" };<br>
+
+var json_str = JSON.stringify( original_obj );<br>
+// 반환 문자열 : {"pi":3.14,"str":"string"}<br>
+
+var parsed_obj = JSON.parse( json_str );<br>
+
+console.log( original_obj ); // {pi: 3.14, str: "string"}<br>
+console.log( parsed_obj ); // {pi: 3.14, str: "string"}<br>
+
+undefined, function 은 변환되지 않음에 주의!<br>
+
+

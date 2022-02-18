@@ -84,6 +84,21 @@ document.querySelector : css selector를 기반으로 엘리먼트를 선택<br>
 document.querySelectorAll : css selector를 기반으로 만족하는 모든 엘리먼트를 선택<br>
 
 ### CSS Selector
-\# : name 기반으로 선택<br>
+\# : id,name 기반으로 선택<br>
 . : class 기반으로 선택<br>
 , : 여러개의 셀렉터를 사용<br>
+
+
+## Element 추가/삭제
+### Document API
+document.createElement() : 문자열 인자로 element tag를 입력하면 해당 엘리먼트가 생성돼 반환됨<br>
+
+### Element API
+.appendChild(인자) : 추가할 element를 인자로 받아 호출된 element의 자식으로 인자를 추가함<br>
+.removeChild(인자) : 삭제할 element를 인자로 받아 호출된 element의 자식중에서 해당 element를 삭제<br>
+.insertBefore(인자1, 인자2) : 인자1로 받은 element를 호출된 element의 자식중 인자2의 이전에 추가함<br>
+.cloneNode() : 호출된 element를 복사해서 반환함<br>
+
+
+
+

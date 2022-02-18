@@ -75,3 +75,15 @@ document.getElementsBy~ : 다중 엘리먼트를 선택하는 메소드. 배열�
 #### .value 속성
 input element에 입력된 값은 .value를 통해 얻어올 수 있음
 getAttribute 메소드로는 받아올 수 없다는 점 주의
+
+
+## CSS Selector를 이용한 Element 선택
+### Document API
+document.querySelector : css selector를 기반으로 엘리먼트를 선택<br>
+조건에 부합하는 element가 여러개인 경우 첫 엘리먼트만 반환.<br>
+document.querySelectorAll : css selector를 기반으로 만족하는 모든 엘리먼트를 선택<br>
+
+### CSS Selector
+\# : name 기반으로 선택<br>
+. : class 기반으로 선택<br>
+, : 여러개의 셀렉터를 사용<br>

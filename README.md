@@ -29,3 +29,35 @@ children에는 문서의 최상위 엘리먼트인 html이 존재<br>
 #### 같은 레벨의 형제 엘리먼트에 접근하는 방법
 .nextElementSibling<br>
 .previousElementSibling<br>
+
+
+## 단일 Element 선택
+### Document API
+#### DOM API를 활용해 문서에서 엘리먼트를 선택하는 방법
+document.getElementBy~ : 단일 엘리먼트를 선택하는 메소드<br>
+document.getElementsBy~ : 다중 엘리먼트를 선택하는 메소드<br>
+document.getElementById 메소드<br>
+인자로 HTML element 태그의 id를 전달하면 해당 엘리먼트가 반환됨<br>
+
+### Element API
+#### .innerHTML 속성
+엘리먼트 안의 HTML코드를 변경<br>
+
+#### .innerText 속성
+엘리먼트 안의 텍스트를 변경<br>
+
+#### .style 속성
+css를 변경 가능<br>
+
+#### getAttribute 메소드
+element의 속성의 값을 얻어옴<br>
+하나의 인자 : attribute 이름을 받음<br>
+직접 객체에 동기화되지 않는 속성에 대해서도 접근이 가능<br>
+
+#### setAttribute 메소드
+element의 속성의 값을 설정함<br>
+두개의 인자 : attribute 이름, 설정할 속성의 값을 받음<br>
+직접 객체에 동기화되지 않는 속성에 대해서도 값 설정이 가능<br>'
+
+
+

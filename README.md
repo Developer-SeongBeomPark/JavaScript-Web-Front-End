@@ -60,4 +60,18 @@ element의 속성의 값을 설정함<br>
 직접 객체에 동기화되지 않는 속성에 대해서도 값 설정이 가능<br>'
 
 
+## 다중 Element 선택
+### Document API
+document.getElementsBy~ : 다중 엘리먼트를 선택하는 메소드. 배열형태로 값을 반환함<br>
 
+#### document.getElementsByTagName 메소드
+인자로 HTML element 태그의 이름을 전달하면 해당 엘리먼트들이 반환됨<br>
+#### document.getElementsClassName 메소드
+인자로 class의 이름을 전달하면, 해당 class의 모든 엘리먼트가 배열로 반환됨<br>
+#### document.getElementsByName 메소드
+인자로 name을 전달하면, 해당 name 속성을 가진 모든 엘리먼트가 배열로 반환됨.<br>
+
+### Element API
+#### .value 속성
+input element에 입력된 값은 .value를 통해 얻어올 수 있음
+getAttribute 메소드로는 받아올 수 없다는 점 주의
